@@ -3,10 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-task :console do
-  require_relative './config/environment.rb'
-  require 'pry'
-  Pry.start
-end
-
 Rails.application.load_tasks
